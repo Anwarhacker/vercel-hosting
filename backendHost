@@ -19,12 +19,33 @@ noteapp/
 {
   "version": 2,
   "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+    {
+      "src": "backend/server.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
+    {
+      "src": "/(.*)",
+      "dest": "backend/server.js"
+    }
   ]
 }
 
+
 "
 
+
+after this the backend will on live 
+
+IN frontend just change the 
+http:localhost:5000/api/notes to https://noteapp-dazeou3a0-anwarhackers-projects.vercel.app/api/notes 
+like this 
+
+
+and i got an error because the vercel by default it treat or make our project to private or apply protection 
+So
+
+ in vercel dashnoard --> settings --> development protection --> all projects are available then like to 3 dots to particular project and to --> view project settings 
+
+simply deseable --> Vercel Authentication and try again 
