@@ -7,15 +7,13 @@ noteapp/
                   .env 
                   & remove that app.lesten instead should be " module.exports = app;"
                    while hosting on vercel
-
                   root directory will be backend (folder)
                   Build command should be empty 
                   output directory empty
                   npm install
-
-                 and add vercel.json to backend same path as server.js
-                vercel.json
-                "
+                  and add vercel.json to backend same path as server.js
+                  vercel.json
+ ```
 {
   "version": 2,
   "builds": [
@@ -31,9 +29,7 @@ noteapp/
     }
   ]
 }
-
-
-"
+```
 
 
 after this the backend will on live 
